@@ -1,0 +1,19 @@
+*.o
+*.elf
+*.exe
+*.out
+*.app
+*.hex
+*.dSYM/
+*~
+# Vim template
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+.idea/
+.DS_Store
+.AppleDouble
+.LSOverride
