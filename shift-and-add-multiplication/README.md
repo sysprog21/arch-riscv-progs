@@ -1,14 +1,15 @@
 # Multiplication with Shift and Add
 
-## Overview:
-This project explores multiplication using the shift-and-add technique, a method comparable to traditional pencil-and-paper multiplication. In this procedure, the multiplier (Y) is added to the multiplicand (X) Y times.
+## Description
+This project investigates multiplication using the shift-and-add technique,
+which resembles the traditional method of long multiplication.
+In this approach, the multiplicand (X) is repeatedly added to itself according to the value of the multiplier (Y),
+effectively performing X multiplied by Y.
+The process involves examining each digit of the multiplier from right to left.
+For each digit, the multiplicand is multiplied by that digit, and the intermediate product is shifted accordingly to align with the partial sums from previous steps, resulting in the final product.
 
-## Methodology:
-The multiplication process involves taking the multiplier's digits one at a time, working from right to left. For each digit, the multiplicand is multiplied by the digit, and the intermediate product is positioned to the left of the previous results.
-
-## Implementation:
+## Algorithm
 ```python
-# Sample code 
 def multiply_with_shift_and_add(X, Y):
     result = 0
     while Y > 0:

@@ -1,9 +1,13 @@
 # Russian Peasant Multiplication
 
-**Overview:**
-This project implements the Russian Peasant Multiplication algorithm, also known as Ancient Egyptian Multiplication. It's a multiplication algorithm that dates back to ancient times and allows the multiplication of numbers using the process of halving and doubling without the use of a multiplication operator.
+## Description
+This project implements the Russian Peasant Multiplication algorithm, also known as Ancient Egyptian Multiplication.
+This ancient method allows for multiplying two numbers through a series of halvings and doublings,
+eliminating the need for a direct multiplication operation.
+The process involves repeatedly halving one number and doubling the other,
+then summing specific doubled values based on the halved values that are odd.
 
-**Formula:**
+## Formula
 Let *n* and *m* be two numbers to be multiplied. Then,
 
 - If *n* is even:  
@@ -15,7 +19,7 @@ Let *n* and *m* be two numbers to be multiplied. Then,
 - If *n=1*:  
   *1.m = m*
 
-**Algorithm:**
+## Algorithm:
 ```python
 ALGORITHM RussianPeasantMul(n, m)
     int res = 0;

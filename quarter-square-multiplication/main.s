@@ -1,5 +1,3 @@
-# Quarter Square Multiplication for Multiplying 2 Numbers in RISC-V Assembly
-
 .data
     # Initialize the data section with the two numbers to be multiplied
     num1:   .word 7

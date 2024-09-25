@@ -1,7 +1,9 @@
 # Quarter Square Multiplication
 
 ## Overview:
-This project explores the concept of quarter square multiplication, an approach attributed to Babylonian mathematics. The method utilizes the property that if \(x + y\) is odd, then \(x - y\) will also be odd, allowing for a simplified calculation.
+This project delves into the quarter square multiplication method, a technique rooted in Babylonian mathematics.
+The approach leverages the property that if \(x + y\) is odd, then \(x - y\) will also be odd,
+enabling a more streamlined calculation process.
 
 ## Formula:
 The quarter square multiplication is performed using the following formula:

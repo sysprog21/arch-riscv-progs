@@ -1,29 +1,24 @@
-# TowerOfHanoi
+# Tower-Of-Hanoi
 
 ## Description
-This is a RISC-V Assembly program for solving the Tower of Hanoi problem. The program is designed to be executed on a 32-bit Single Cycle RISC-V Processor. The `towerOfHanoi` function is the main function responsible for solving the problem and takes four arguments: `Num_of_Disks`, `src_rod_char`, `aux_rod_char`, and `dst_rod_char`, stored in registers a1, a2, a3, and a4, respectively. The a0 register is not used (personal preference).
+This RISC-V assembly program implements a solution for the classic Tower of Hanoi game.
+It is designed for execution on a 32-bit RISC-V processor. The core logic resides in the `towerOfHanoi` function,
+which handles the puzzle-solving algorithm. This function accepts four parameters:
+1. `Num_of_Disks`: The number of disks in the puzzle
+2. `src_rod_char`: Character representing the source rod
+3. `aux_rod_char`: Character representing the auxiliary rod
+4. `dst_rod_char`: Character representing the destination rod
 
+These parameters are passed through registers `a1`, `a2`, `a3`, and `a4` respectively.
+Notably, the `a0` register is intentionally left unused in this implementation.
 The program prints the steps of the Tower of Hanoi solution to the console and does not return any values.
+Each step is displayed as a move, indicating which disk is transferred from one rod to another.
 
-## Usage
-1. Ensure that you have a 32-bit Single Cycle RISC-V Processor environment.
-2. Load and execute the program on your RISC-V processor.
-   
-## DISCLAIMER
-Feel free to modify the content based on your preferences or if you have additional information to include. The usage section provides a simple example to demonstrate how someone might use your program.
-
-## Function Parameters
-- `Num_of_Disks`: Number of disks in the Tower of Hanoi problem.
-- `src_rod_char`: Character representation of the source rod.
-- `aux_rod_char`: Character representation of the auxiliary rod.
-- `dst_rod_char`: Character representation of the destination rod.
-
-## Example
+## Example usage
 ```assembly
-# Example usage
-li a1, 3       # Number of disks
-li a2, 'A'     # Source rod character
-li a3, 'B'     # Auxiliary rod character
-li a4, 'C'     # Destination rod character
-jal towerOfHanoi
+li a1, 3          # Set disk count to 3
+li a2, 'A'        # Initialize source rod label
+li a3, 'B'        # Initialize auxiliary rod label
+li a4, 'C'        # Initialize destination rod label
+jal towerOfHanoi  # Call the Tower of Hanoi solving function
 ```
